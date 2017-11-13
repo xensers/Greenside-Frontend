@@ -1,0 +1,249 @@
+@import '../../bower_components/normalize-css/normalize.css';
+
+@font-face
+{
+    font-family: 'ProximaNova';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/ProximaNova/ProximaNova-Regular.otf');
+}
+
+*
+{
+    // transition: all .5s;
+}
+
+body
+{
+    font-family: 'ProximaNova', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+    @media screen and (min-width: 768px){
+        background: url(../img/body-bg.svg) repeat center;
+    }
+}
+
+.wrapper
+{
+    position: relative;
+
+    max-width: 1280px;
+    margin: auto;
+
+    overflow: hidden;
+
+    width: 100%;
+
+     > .page
+    {
+        display: flex;
+
+        width: calc(100% + 240px);
+        margin-left: -240px;
+
+        transition: margin .5s ease;
+
+        align-items: stretch;
+        @media screen and (min-width: 768px)
+        {
+            width: 100%;
+            margin-left: 0;
+        }
+         > .side
+        {
+            position: relative;
+            z-index: 999;
+
+            flex: 0 1 240px;
+             > .nav
+            {
+                position: fixed;
+
+                width: 240px;
+                padding-left: 15px;
+                .side-toggle
+                {
+                    position: absolute;
+                    z-index: 999;
+                    top: 0;
+                    right: -36px;
+                    @media screen and (min-width: 768px)
+                    {
+                        display: none;
+                    }
+                }
+
+                 > ul
+                {
+                    padding-top: 30px;
+
+                    list-style: none;
+                     > li
+                    {
+                        font-size: 16px;
+
+                        position: relative;
+
+                        margin-top: 7px;
+                        margin-bottom: 7px;
+                        &:first-child
+                        {
+                            font-size: 24px;
+                            font-weight: bold;
+
+                            margin-bottom: 27px;
+                        }
+                        &:after
+                        {
+                            position: absolute;
+                            z-index: -1;
+                            top: .4em;
+                            left: -999px;
+                            opacity: 0;
+                            display: inline-block;
+
+                            width: 97px;
+                            height: 1px;
+
+                            content: '';
+                            transition: all .5s ease;
+
+                            background: #00f7d8;
+                        }
+                         > a
+                        {
+                            z-index: 2;
+
+                            transition: opacity .5s;
+                            text-decoration: none;
+
+                            opacity: .35;
+                            color: #000;
+                        }
+                        &.active
+                        {
+                             > a
+                            {
+                                opacity: 1;
+                            }
+                            &:after
+                            {
+                                left: -29px;
+                                opacity: 1;
+
+                                height: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+         > .body
+        {
+            padding-right: 15px;
+            padding-left: 15px;
+
+            transition: opacity .5s;
+
+            flex: 1 1;
+
+             > section
+            {
+                min-height: 100vh;
+                margin-left: -240px;
+                padding: 15px;
+                padding-top: 40px;
+                padding-left: 240px;
+
+                border-bottom: 1px solid #dcdcdc;
+            }
+        }
+    }
+}
+
+
+.side-open
+{
+    .page
+    {
+        margin-left: 0;
+    }
+    .body
+    {
+        opacity: .5;
+    }
+    .side{
+        border-right: 1px solid #DCDCDC;
+    }
+}
+
+.side-toggle
+{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+
+    text-indent: -9999px;
+
+    border: none;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 5px 5px 20px #fff;
+    border-radius: 25%;
+
+
+     > span,
+    &:before,
+    &:after
+    {
+        position: absolute;
+        top: 22px;
+        left: 9px;
+
+        display: block;
+        overflow: hidden;
+
+        width: 30px;
+        width: 30px;
+        height: 4px;
+
+        transition: transform .8s ease, top .5s, opacity .3s, left 1s;
+        background: #00f7d8;
+    }
+    &:before
+    {
+        top: 12px;
+
+        content: '';
+    }
+    &:after
+    {
+        top: 32px;
+
+        content: '';
+    }
+}
+
+
+.side-open .side-toggle
+{
+    transition: top .3s 0;
+    span
+    {
+        opacity: 0;
+        left: -20px;
+    }
+
+    &:before
+    {
+        top: 24px;
+
+        transform: rotate(45deg);
+    }
+    &:after
+    {
+        top: 24px;
+
+        transform: rotate(-45deg);
+    }
+}
