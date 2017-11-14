@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>instagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-copy" transform="translate(-106.000000, -696.000000)">
+            <g id="Group-5" transform="translate(78.000000, 663.000000)">
+                <g id="Group-4" transform="translate(0.000000, 30.000000)">
+                    <g id="instagram" transform="translate(28.000000, 3.000000)">
+                        <path d="M1.8,17 L16.2,17 C16.6422153,17 17,16.6422153 17,16.2 L17,1.8 C17,1.35778475 16.6422153,1 16.2,1 L1.8,1 C1.35778475,1 1,1.35778475 1,1.8 L1,16.2 C1,16.6422153 1.35778475,17 1.8,17 Z" id="Shape" stroke="#000000" stroke-width="2"></path>
+                        <circle id="Oval" stroke="#000000" stroke-width="2" cx="9" cy="9" r="4.5"></circle>
+                        <path d="M0,2 L0,7.2 L4.8141,7.2 C5.5566,5.1039 6.6501,4.5 9,4.5 C11.3499,4.5 12.4443,5.1039 13.1859,7.2 L18,7.2 L18,2 L18,2 C18,0.8954305 17.1045695,-2.02906125e-16 16,0 L2,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 Z M16.2,4.5 L13.5,4.5 L13.5,1.8 L16.2,1.8 L16.2,4.5 Z" id="Shape" fill="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

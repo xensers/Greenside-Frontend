@@ -5,8 +5,13 @@
 
 
 jQuery(document).ready(function($) {
+
     $('body').on('click', '.side-toggle', function(event) {
         $('body').toggleClass('side-open');
+    });
+
+    $('body').on('click', '.page .body', function(event) {
+        $('body').removeClass('side-open');
     });
 
     $(window).scroll(function(event) {
@@ -31,14 +36,13 @@ jQuery(document).ready(function($) {
             $target = $(target);
 
         $('html, body').stop().animate({
-         'scrollTop': $target.offset().top
+         'scrollTop': $(this.hash).offset().top
          }, 500, 'swing', function () {
             window.location.hash = target;
             setTimeout(function() {
                 $('body').removeClass('side-open');
-            }, 400);
+            }, 300);
          });
      });
 
 });
-
