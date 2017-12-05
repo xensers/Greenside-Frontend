@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-134.000000, -696.000000)" id="Group-5" fill-rule="nonzero" fill="#000000">
+            <g transform="translate(78.000000, 663.000000)">
+                <g id="Group-4" transform="translate(0.000000, 30.000000)">
+                    <g id="facebook" transform="translate(56.000000, 3.000000)">
+                        <path d="M16.2,0 L1.8,0 C0.81,0 0,0.81 0,1.8 L0,16.2 C0,17.19 0.81,18 1.8,18 L16.2,18 C17.19,18 18,17.19 18,16.2 L18,1.8 C18,0.81 17.19,0 16.2,0 Z M14.76,4.86 L13.5,4.86 C12.69,4.86 12.6,5.13 12.6,5.76 L12.6,6.93 L14.49,6.93 L14.4,9 L12.69,9 L12.69,15.3 L9.81,15.3 L9.81,9 L8.73,9 L8.73,6.84 L9.81,6.84 L9.81,5.49 C9.81,3.69 10.53,2.7 12.6,2.7 L14.76,2.7 L14.76,4.86 L14.76,4.86 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
